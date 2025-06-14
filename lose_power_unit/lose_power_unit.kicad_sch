@@ -583,11 +583,11 @@
 				)
 			)
 		)
-		(symbol "capacitor_miscellaneous:C_0603_100nF"
+		(symbol "capacitor_miscellaneous:C_0402_100nF"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "C"
 				(at 1.27 2.54 0)
 				(effects
 					(font
@@ -603,8 +603,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-				(at 0 0 0)
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 2.54 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -630,15 +630,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB Part#" "C14663"
-				(at 0 0 0)
+			(property "JLCPCB Part#" "C307331"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "C_0603_100nF_0_1"
+			(symbol "C_0402_100nF_0_1"
 				(polyline
 					(pts
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
@@ -664,7 +665,7 @@
 					)
 				)
 			)
-			(symbol "C_0603_100nF_1_1"
+			(symbol "C_0402_100nF_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -2182,7 +2183,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_kicad_lib_sk:R_0603_smalltext"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 209.55 115.57 0)
 			(effects
 				(font
@@ -2209,7 +2210,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C22775"
+		(property "JLCPCB Part#" "C25076"
 			(at 207.01 118.11 0)
 			(effects
 				(font
@@ -2624,84 +2625,6 @@
 		)
 	)
 	(symbol
-		(lib_id "resistors_0603:R_100R_0603")
-		(at 246.38 114.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7400a58c-c5ea-4c28-9740-52e4f854a2cb")
-		(property "Reference" "R2"
-			(at 243.84 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100R"
-			(at 243.84 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "custom_kicad_lib_sk:R_0603_smalltext"
-			(at 248.92 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 246.38 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C22775"
-			(at 246.38 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15fbebad-a019-45b3-991b-78b9eab07e53")
-		)
-		(pin "2"
-			(uuid "91b0c1aa-ad35-4142-9ce0-d0c08d995ff4")
-		)
-		(instances
-			(project "lose_power_unit"
-				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 254 114.3 270)
 		(unit 1)
@@ -2842,6 +2765,84 @@
 			(project "lose_power_unit"
 				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors_0603:R_100R_0603")
+		(at 246.38 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7afafd26-ba6b-43c3-ac4a-7a38ca53ed64")
+		(property "Reference" "R2"
+			(at 248.92 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R"
+			(at 248.92 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 243.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part#" "C25076"
+			(at 246.38 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "089f6acb-c187-4254-9407-cda27a167061")
+		)
+		(pin "2"
+			(uuid "cfdc3a63-1aca-45f0-bef4-4785d55bfb6f")
+		)
+		(instances
+			(project "lose_power_unit"
+				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3009,83 +3010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "capacitor_miscellaneous:C_0603_100nF")
-		(at 180.34 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf3e6748-cbb7-4fac-9d9a-50bd6e64d92e")
-		(property "Reference" "C1"
-			(at 180.34 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 180.34 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 180.34 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C14663"
-			(at 182.8863 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "133c2311-b9b3-4828-b18e-0f38ffeb13c2")
-		)
-		(pin "2"
-			(uuid "f4f2a1e5-8f08-4c2c-b69a-04b9a75af7a0")
-		)
-		(instances
-			(project "lose_power_unit"
-				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 267.97 114.3 180)
 		(unit 1)
@@ -3242,6 +3166,82 @@
 			(project "lose_power_unit"
 				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitor_miscellaneous:C_0402_100nF")
+		(at 180.34 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e46f97cb-d566-48a5-8248-c3066f04a089")
+		(property "Reference" "C1"
+			(at 184.15 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 180.3463 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 177.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part#" "C307331"
+			(at 182.88 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c591aff6-1d4a-475a-91d3-7c22de9f97b7")
+		)
+		(pin "1"
+			(uuid "4dd4362f-86ce-4a76-b141-28a4ba90f2fd")
+		)
+		(instances
+			(project ""
+				(path "/cc9e42b3-db83-442e-a9cc-e842359bae6d"
+					(reference "C1")
 					(unit 1)
 				)
 			)
