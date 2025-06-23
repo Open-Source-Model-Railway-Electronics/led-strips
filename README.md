@@ -6,4 +6,4 @@
 
 ## 📄 Documentation
 
-[Download the manual](docs/manual.pdf)
+[Download the manual](docs/Manual.pdf)
